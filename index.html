@@ -13,6 +13,7 @@
     <meta property="og:description" content="Escucha tu música favorita con la mejor calidad de sonido. Nuestro reproductor web es fácil de usar y compatible con todos tus dispositivos."/>
     <link rel="shortcut icon" href="resources/SVG/Logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Reproductor Web - Inicio</title>
 </head>
 
@@ -151,7 +152,7 @@
                     <button>Ver más...</button>
                 </div>
 
-                <div class="panel-central__canciones__contenido">
+                <div class="panel-central__canciones__contenido" id="canciones-lista">
 
                     <!-------------------------- Canción 1 -------------------------->
                     <div class="panel-central__canciones__contenido__cancion">
@@ -163,41 +164,41 @@
                             </div>
                             <img src="/resources/SVG/Panel Central/like.svg" alt="">
                         </div>
+                    </div>
 
-                        <!-------------------------- Canción 2 -------------------------->
-                        <div class="panel-central__canciones__contenido__cancion">
-                            <img src="/resources/JPG/Canciones/02.jpg" alt="">
-                            <div class="panel-central__canciones__contenido__cancion__descripcion">
-                                <div>
-                                    <a href="#">Who</a>
-                                    <a href="#">Jimin</a>
-                                </div>
-                                <img src="/resources/SVG/Panel Central/liked.svg" alt="">
+                    <!-------------------------- Canción 2 -------------------------->
+                    <div class="panel-central__canciones__contenido__cancion">
+                        <img src="/resources/JPG/Canciones/02.jpg" alt="">
+                        <div class="panel-central__canciones__contenido__cancion__descripcion">
+                            <div>
+                                <a href="#">Who</a>
+                                <a href="#">Jimin</a>
                             </div>
+                            <img src="/resources/SVG/Panel Central/liked.svg" alt="">
                         </div>
+                    </div>
 
-                        <!-------------------------- Canción 3 -------------------------->
-                        <div class="panel-central__canciones__contenido__cancion">
-                            <img src="/resources/JPG/Canciones/03.jpg" alt="">
-                            <div class="panel-central__canciones__contenido__cancion__descripcion">
-                                <div>
-                                    <a href="#">BTBT</a>
-                                    <a href="#">BI feat. DeVita</a>
-                                </div>
-                                <img src="/resources/SVG/Panel Central/like.svg" alt="">
+                    <!-------------------------- Canción 3 -------------------------->
+                    <div class="panel-central__canciones__contenido__cancion">
+                        <img src="/resources/JPG/Canciones/03.jpg" alt="">
+                        <div class="panel-central__canciones__contenido__cancion__descripcion">
+                            <div>
+                                <a href="#">BTBT</a>
+                                <a href="#">BI feat. DeVita</a>
                             </div>
+                            <img src="/resources/SVG/Panel Central/like.svg" alt="">
                         </div>
+                    </div>
 
-                        <!-------------------------- Canción 4 -------------------------->
-                        <div class="panel-central__canciones__contenido__cancion">
-                            <img src="/resources/JPG/Canciones/04.jpg" alt="">
-                            <div class="panel-central__canciones__contenido__cancion__descripcion">
-                                <div>
-                                    <a href="#">Glimpse of Us</a>
-                                    <a href="#">Joji</a>
-                                </div>
-                                <img src="/resources/SVG/Panel Central/like.svg" alt="">
+                    <!-------------------------- Canción 4 -------------------------->
+                    <div class="panel-central__canciones__contenido__cancion">
+                        <img src="/resources/JPG/Canciones/04.jpg" alt="">
+                        <div class="panel-central__canciones__contenido__cancion__descripcion">
+                            <div>
+                                <a href="#">Glimpse of Us</a>
+                                <a href="#">Joji</a>
                             </div>
+                            <img src="/resources/SVG/Panel Central/like.svg" alt="">
                         </div>
                     </div>
 
@@ -365,5 +366,6 @@
 
     </main>
     
+    <script src="/main.js"></script>
 </body>
 </html>

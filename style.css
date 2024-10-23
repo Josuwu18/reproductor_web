@@ -29,3 +29,30 @@ a {
     font-family: Roboto-Light;
     src: url(resources/Fonts/Roboto-Light.ttf);
 }
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel-izquierdo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.panel-central {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.panel-derecho{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
