@@ -35,24 +35,403 @@ main {
     justify-content: space-between;
 }
 
+/* -------------------- Panel Izquierdo -------------------- */
+
 .panel-izquierdo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: #f0f0f2;
 }
+
+.panel-izquierdo__logo {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-izquierdo__pestañas {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 10px;
+}
+
+.panel-izquierdo__pestañas__pestaña {
+    display: flex;
+    padding: 20px 30px;
+    gap: 10px;
+    align-items: center;
+}
+
+.active {
+    background-color: #fff;
+    border-radius: 50px 0 0 50px;
+}
+
+.panel-izquierdo__cuenta {
+    display: flex;
+    padding: 30px;
+    gap: 10px;
+    align-items: center;
+}
+
+/* -------------------- Panel Central -------------------- */
 
 .panel-central {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     justify-content: space-between;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+            /* -------------------- Navegador -------------------- */
+
+.panel-central__navegador {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.panel-central__navegador__filtros{
+    width: 100%;
+}
+
+.panel-central__navegador__filtros ul {
+    display: flex;
+    padding: 0 40px;
+    gap: 15%;
+    font-weight: 700;
+}
+
+.panel-central__navegador__filtros ul li {
+    font-weight: 700;
+}
+
+.panel-central__navegador__buscador form{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.panel-central__navegador__buscador input {
+    background-color: #e2e2e2;
+    border-radius: 20px;
+    padding: 15px 20px;
+}
+
+.panel-central__navegador__buscador button {
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+            /* -------------------- Artistas -------------------- */
+
+.panel-central__artistas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 40px;
+}
+
+.panel-central__encabezados {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.panel-central__encabezados h1{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.panel-central__encabezados button{
+    background-color: transparent;
+}
+
+.panel-central__artistas__contenido {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.panel-central__artistas__contenido__artista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.panel-central__artistas__contenido__artista img{
+    border-radius: 100px;
+}
+
+            /* -------------------- Recientes -------------------- */
+
+.panel-central__recientes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 40px;
+}
+
+.panel-central__recientes__contenido {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 100px;
+    gap: 50px;
+}
+
+.panel-central__recientes__contenido__principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.panel-central__recientes__contenido__principal__contenedor {
+    background-color: #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.panel-central__recientes__contenido__principal__contenedor img{
+    border-radius: 25px;
+}
+
+.panel-central__recientes__contenido__principal__contenedor__descripcion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.panel-central__recientes__contenido__principal__contenedor__descripcion div {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-central__recientes__contenido__principal__contenedor__descripcion div a{
+    font-weight: 700;
+}
+
+.panel-central__recientes__contenido__principal__contenedor__descripcion img{
+    border-radius: 100px;
+    background-color: #7c8ea6;
+}
+
+.panel-central__recientes__contenido__otras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    padding: 20px;
+}
+
+.panel-central__recientes__contenido__otras__contenedor {
+    background-color: #e2e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.panel-central__recientes__contenido__otras__contenedor__descripcion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.panel-central__recientes__contenido__otras__contenedor__descripcion div {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-central__recientes__contenido__otras__contenedor__descripcion div a{
+    font-weight: 700;
+}
+
+.panel-central__recientes__contenido__otras__contenedor img{
+    border-radius: 100px;
+    background-color: #7c8ea6;
+}
+
+            /* -------------------- Canciones -------------------- */
+
+.panel-central__canciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 40px;
+}
+
+.panel-central__canciones__contenido {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    width: 100%;
     overflow: auto;
 }
+
+.panel-central__canciones__contenido img {
+    border-radius: 25px;
+    height: 180px;
+}
+
+.panel-central__canciones__contenido__cancion__descripcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-central__canciones__contenido__cancion__descripcion div{
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-central__canciones__contenido__cancion__descripcion div a{
+    font-weight: 700;
+}
+
+.panel-central__canciones__contenido__cancion__descripcion img{
+    border-radius: 0px;
+    width: auto;
+    height: auto;
+}
+
+
+/* -------------------- Panel Derecho -------------------- */
 
 .panel-derecho{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: #f0f0f2;
 }
 
+            /* -------------------- Amigos -------------------- */
+
+.panel-derecho__amigos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 15px;
+    gap: 10px;
+}
+
+.panel-derecho__amigos h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.panel-derecho__amigos p {
+    font-family: Roboto-Light;
+}
+
+.panel-derecho__amigos__usuarios {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.panel-derecho__amigos__usuarios__usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.panel-derecho__amigos__usuarios__usuario img {
+    border-radius: 100px;
+}
+
+.panel-derecho__amigos__usuarios__mas {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+            /* -------------------- Reproductor -------------------- */
+
+.panel-derecho__reproductor {
+    padding: 20px;
+}
+
+.panel-derecho__reproductor__contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.panel-derecho__reproductor__contenedor img {
+    border-radius: 20px;
+}
+
+.panel-derecho__reproductor__contenedor__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panel-derecho__reproductor__contenedor__info p {
+    font-weight: 700;
+}
+
+.panel-derecho__reproductor__contenedor__progreso {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.panel-derecho__reproductor__contenedor__progreso__barra {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.panel-derecho__reproductor__contenedor__progreso__tiempos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel-derecho__reproductor__contenedor__controles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel-derecho__reproductor__contenedor__controles__centrales {
+    display: flex;
+    gap: 10px;
+}

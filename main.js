@@ -13,7 +13,7 @@ axios.get('https://api.institutoalfa.org/api/songs').then((res) => {
         <div class="panel-central__canciones__contenido__cancion__descripcion">
             <div>
                 <a href="#">${song.title}</a>
-                <a href="#">${song.author}</a>
+                <a href="#"><span>${song.author}</span></a>
             </div>
             <img src="/resources/SVG/Panel Central/like.svg" alt="">
         </div>`
