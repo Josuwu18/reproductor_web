@@ -9,7 +9,7 @@ axios.get('https://api.institutoalfa.org/api/songs').then((res) => {
         div.setAttribute('class', 'panel-central__canciones__contenido__cancion')
 
         div.innerHTML =
-        `<img src="https://api.institutoalfa.org/api/songs/image/${song.image.filename}">
+        `<img src="https://api.institutoalfa.org/api/songs/image/${song.image.filename}" alt="album de ${song.album}">
         <div class="panel-central__canciones__contenido__cancion__descripcion">
             <div>
                 <a href="#">${song.title}</a>
