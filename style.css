@@ -387,11 +387,17 @@ main {
 
 .panel-derecho__reproductor__contenedor {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 10px;
     padding: 20px;
     background-color: #fff;
     border-radius: 20px;
+}
+
+.img{
+    width: 200px;
+    height: auto;
 }
 
 .panel-derecho__reproductor__contenedor img {
@@ -428,6 +434,7 @@ main {
 
 .panel-derecho__reproductor__contenedor__controles {
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 
